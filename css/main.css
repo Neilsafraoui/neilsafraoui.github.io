@@ -13,6 +13,19 @@ p, span, li{
     font-family: 'Lato', sans-serif;
 }
 
+nav{
+    background: none !important;
+}
+
+.call-button{
+    font-family: 'Lato', sans-serif !important;
+}
+
+/***** UTILITY *****/
+
+.text-white{
+    color:white;
+}
 
 
 /* 
