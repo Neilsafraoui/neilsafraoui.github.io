@@ -13,8 +13,14 @@ p, span, li{
     font-family: 'Lato', sans-serif;
 }
 
+/*
 nav{
     background: none !important;
+}
+*/
+
+nav{
+    background: white !important;
 }
 
 .call-button{
