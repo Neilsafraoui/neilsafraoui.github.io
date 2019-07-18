@@ -1,137 +1,300 @@
 <!DOCTYPE html>
-<html>
+    <html>
     <head>
-        <title>Portfolio - Neil Safraoui</title>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Neil.Safraoui</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i|Lato:400,400i,700,700i" rel="stylesheet"> 
-        
-        <!-- UIkit CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.9/css/uikit.min.css" />
 
-        <!-- UIkit JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.9/js/uikit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.9/js/uikit-icons.min.js"></script>
+        <!-- EXTERNAL -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Hind:300,400,500,600,700|Open+Sans:300,400,600,700|Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet"> 
         
-        <link rel="icon" href="images/favicon.ico" />
-        
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+        <!-- <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/latest/normalize.css" /> -->
+
+        <!-- INTERNAL -->
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <!-- <script src="main.js"></script> -->
     </head>
     <body>
-        
-        <div class="uk-container">
-        
-            <!-- NAVIGATION -->
-            <nav class="uk-navbar-container" uk-navbar uk-sticky>
-                
-                <!-- LEFT -->
-                 <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li class=""><a href="index.html">Neil Safraoui</a></li>
-                     </ul>
+        <header id="start-header">
+            <!-- bg image + overlay -->
+            <div class="hero">
+                <div class="hero-content">
+                    <nav class="nav-menu">
+                        <span class="hero-top-name semi-b"><a href="index.html">Neil.SAFRAOUI</a></span>
+                        <input type="checkbox" class="menu-btn" id="menu-btn" />
+                        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+                        <ul class="menu">
+                            <!-- <li><a href="#profile">profil</a></li> -->
+                            <li><a href="#experiences">experiences</a></li>
+                            <li><a href="#competences">compétences</a></li>
+                            <li><a href="#projets">projets</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="pure-g main-container">
+                        <div class="hero-wrapper pure-u-1 pure-u-lg-1-2">
+                            <img class="hero-img" src="assets/img/ns_br.jpg" alt="neil safraoui">
+                            <h1 class="hero-title bold t-center">Développeur, Designer Web</h1>
+                            <p class="hero-jsearch bold t-center">Recherche poste développeur Front-End</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- RIGHT -->
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="index.html"> Accueil </a></li>
-                        <li class=""><a href="pages/cv.html"> CV </a></li>
-                        <li>
-                            <a href="pages/creations.html">Créations</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class=""><a href="pages/creations/ruins.html">Ruines</a></li>
-                                    <li><a href="pages/creations/tropical-island.html">Île tropicale</a></li>
-                                    <li><a href="pages/creations/projet-rpg.html">Projet RPG</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="pages/contact.html">Contact</a></li>
-                    </ul>
-
-                </div>
-            </nav>  
-            <!-- FIN NAVIGATION -->
-            <hr class="uk-margin-remove-top">  
-            
-        </div>
-        <!-- FIN CONTAINER NAV -->
-        
-        <!-- CONTAINER -->
-        <div class="uk-container uk-align-center">
-            
-            <div class="uk-text-center">
-                <h2> Bienvenue </h2>
-                <hr class="uk-divider-small">
             </div>
-            
-            <div class="mainAccueil uk-text-center">
-
-                <p> Blablablabla </p>
-
-                <h4> Créations </h4>
-                <hr class="uk-divider-small">
-
-                <div class="creations">
-
-                   <!-- <div class="uk-inline">
-                        <a href="index.html">
-                            <img src="images/unity-ld-30.jpg" alt="RuinsExplorer">
-                            <div class="uk-overlay uk-light uk-position-bottom">
-                                <p> Niveau jouable réalisé sur Unity et Blender </p>
-                            </div>
-                        </a>
-                    </div> -->
-                    
-                    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover uk-box-shadow-small">
-                                <div class="uk-card-media-top">
-                                    <img src="images/ru-2.jpg" alt="ruins-layout">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title"><a href="pages/creations/ruins.html" class="uk-link-heading"> Ruines </a></h3>
-                                    <p>Niveau jouable, réalisé avec Blender et Unity.</p>
+        </header>
+        <main> <!-- removed class="main-container" -->
+            <!-- PROFILE -->
+            <section id="profile" class="home-sections main-container">
+                <div class="section-title-wrapper">
+                    <h2>profil</h2>
+                </div>
+                <div class="profile-content"><!--  pure-u-1 pure-u-lg-2-3 -->
+                    <p class="profile-text">Passionné d’informatique et du web depuis l’enfance, j’ai naturellement choisi ce domaine d’activité. </p> 
+                    <p class="profile-text">Au cours de mes études, j’ai pu réaliser de nombreux stages : de la création de site avec CMS à la gestion full-stack d’un projet web. </p>
+                    <p class="profile-text">Aujourd’hui je souhaite consolider mes compétences en développement Front-End.</p>
+                </div>
+                <!-- <button class="profile-see-more">VOIR PLUS</button> -->
+            </section>
+            <!-- EXPERIENCES -->
+            <section id="experiences" class="home-sections main-container">
+                <div class="section-title-wrapper">
+                    <h2>expériences</h2>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-wrapper pure-g">
+                        <div class="exp-left pure-u-1 pure-u-md-1-3">
+                            <h4 class="exp-firm">Belleville Citoyenne</h4>
+                            <p class="exp-date light">Nov. 2018 - Juin 2019</p>
+                        </div>
+                        <div class="exp-right pure-u-1 pure-u-md-2-3">
+                            <p class="exp-joblabel semi-b">Assistant pédagogique - <span class="exp-joblabel-info">pôle numérique</span></p>
+                            <p class="exp-desc">Formation intensive en développement web dispensée avec l’équipe de _blank.</p>
+                        </div>
+                    </div>
+                    <div class="experience-wrapper pure-g">
+                        <div class="exp-left pure-u-1 pure-u-md-1-3">
+                            <h4 class="exp-firm">Projets personnels</h4>
+                            <p class="exp-date light">Déc. 2016 - Oct. 2018</p>
+                        </div>
+                        <div class="exp-right pure-u-1 pure-u-md-2-3">
+                            <p class="exp-joblabel semi-b">Créateur de contenu/prototypeur de jeu vidéo</p>
+                            <p class="exp-desc">Scripting (C#), Level Design (Unity), modélisation 3D (Blender), interface utilisateur et textures (Photoshop/Krita)..</p>
+                        </div>
+                    </div>
+                    <div class="experience-wrapper pure-g">
+                        <div class="exp-left pure-u-1 pure-u-md-1-3">
+                            <h4 class="exp-firm">Velvet Consulting</h4>
+                            <p class="exp-date light">Mai 2016 - Nov. 2016</p>
+                        </div>
+                        <div class="exp-right pure-u-1 pure-u-md-2-3">
+                            <p class="exp-joblabel semi-b">Consultant - Automatisation marketing d'entreprise</p>
+                            <p class="exp-desc">Tierce maintenance applicative pour un client dans le domaine de l'immobilier.</p>
+                        </div>
+                    </div>
+                    <div class="experience-wrapper pure-g">
+                        <div class="exp-left pure-u-1 pure-u-md-1-3">
+                            <h4 class="exp-firm">Hel-ixir</h4>
+                            <p class="exp-date light">Mai 2015 - Sept. 2015</p>
+                        </div>
+                        <div class="exp-right pure-u-1 pure-u-md-2-3">
+                            <p class="exp-joblabel semi-b">Chargé de projet/Développeur web</p>
+                            <p class="exp-desc">Reprise et amélioration d'un projet web de boutique d'objets personnalisables.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- COMPETENCES -->
+            <section id="competences" class="home-sections">
+                <div class="section-title-wrapper">
+                    <h2>compétences</h2>
+                </div>
+                <div class="competence-content main-container">
+                    <div class="competence-wrapper pure-g">
+                        <div class="competence-element pure-u-1 pure-u-lg-1-2">
+                            <h3 class="comp-category" id="dev">Développement</h3>
+                            <p>J'apprécie particulièrement développer côté Front-End : récupération de données via des API et réalisation d'interfaces responsive pour permettre à l'utilisateur d'observer et exploiter les données.</p>
+                            <h4 class="competence-subtitle">Langages & Base de données</h4>
+                            <ul class="comps-list">
+                                <li class="comp-elem">HTML, CSS, JavaScript, PHP</li>
+                                <li class="comp-elem">Java, C#</li>
+                                <li class="comp-elem">MySQL, SQLite, MongoDB</li>
+                            </ul>
+                            <h4 class="competence-subtitle">Frameworks & Librairies</h4>
+                            <ul class="comps-list">
+                                <li class="comp-elem">jQuery, AJAX, Vue.js</li>
+                                <li class="comp-elem">(Node.js, Express.js)</li>
+                                <li class="comp-elem"><span class="comp-elem-label">Autres : </span>API SOAP/REST, PUG/Jade, XML</li>
+                            </ul>
+                            <h4 class="competence-subtitle">Outils</h4>
+                            <ul class="tools-list">
+                                <li>Github</li>
+                                <li>Visual Studio Code</li>
+                                <li>PureCSS/UIKit</li>
+                                <li>Unity3D</li>
+                            </ul>
+                        </div>
+                        <div class="competence-element pure-u-1 pure-u-lg-1-2">
+                            <h3 class="comp-category" id="gest">Gestion/Conception</h3>
+                            <p>Des méthodes de gestion de projet à la conception logicielle, puis la maintenance d'application. Au cours de mes études et expériences, j'ai pu en avoir de solides approches et/ou applications directes. </p>
+                            <h4 class="competence-subtitle">Méthodes & Langages</h4>
+                            <ul class="comps-list">
+                                <li class="comp-elem">SCRUM, Cycle en V</li>
+                                <li class="comp-elem">UML2, BPMN, MERISE</li>
+                                <li class="comp-elem">Tierce Maintenance Applicative</li>
+                            </ul>
+                            <h4 class="competence-subtitle">Outils</h4>
+                            <ul class="tools-list">
+                                <li>BugZilla/YouTrack</li>
+                            </ul>
+                        </div>
+                        <div class="competence-element pure-u-1 pure-u-lg-1-2">
+                            <h3 class="comp-category" id="tools">Design</h3>
+                            <p>J'ai acquis, avec le temps passé en ligne, une sensibilité au design d'interfaces et au style dit "minimaliste". De ce fait, je valorise davantage la clarté et la simplicité. </p>
+                            <h4 class="competence-subtitle">Outils</h4>
+                            <ul class="tools-list">
+                                <li>Adobe Color/Coolors</li>
+                                <li>Google Fonts</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                        <div class="competence-element pure-u-1 pure-u-lg-1-2">
+                            <h3 class="comp-category" id="lang">Langues</h3>
+                            <p class="comp-elem-lang"><span class="comp-elem-label">Anglais : </span>Courant - C1</p>
+                            <p class="comp-elem-lang"><span class="comp-elem-label">Allemand : </span>Intermédiaire - B1</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PROJETS -->
+            <section id="projets" class="home-sections main-container"> <!-- removed main-container -->
+                <div class="section-title-wrapper">
+                    <h2>projets</h2>
+                </div>
+                <div class="projet-content">
+                    <div class="projet-wrapper pure-g">
+                        <div class="projet-element pure-u-1 pure-u-md-1-2">
+                            <div class="projet-img-wrapper">
+                                <img src="assets/img/p-hq-768x576.jpg" alt="projet history quiz" class="projet-img">
+                                <div class="projet-element-content">    
+                                    <h4 class="projet-name">HistoryQuiz</h4>
+                                    <p class="project-desc">Quiz d'histoire (Vue.js)</p>
+                                    <a href="http://neilsafraoui.github.io/HistoryQuiz" class="projet-link" target="_blank"> VOIR </a>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover uk-box-shadow-small">
-                                <div class="uk-card-media-top">
-                                    <img src="images/ti-3.jpg" alt="ruins-layout">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title"><a href="pages/creations/tropical-island.html" class="uk-link-heading"> Île tropicale </a></h3>
-                                    <p>Niveau réalisé avec Blender et Unity.</p>
+                        <div class="projet-element pure-u-1 pure-u-md-1-2">
+                            <div class="projet-img-wrapper">
+                                <img src="assets/img/p-lfg-768x576.jpg" alt="projet looking for gifs" class="projet-img ">
+                                <div class="projet-element-content">
+                                    <h4 class="projet-name">LFGifs</h4>
+                                    <p class="project-desc">Recherche de gifs via l'API Giphy (Vue.js)</p>
+                                    <a href="http://neilsafraoui.github.io/LFGifs" class="projet-link" target="_blank"> VOIR </a>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover uk-box-shadow-small">
-                                <div class="uk-card-media-top">
-                                    <img src="images/rpgp-2.jpg" alt="ruins-layout">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title"><a href="pages/creations/projet-rpg.html" class="uk-link-heading"> Projet RPG </a></h3>
-                                    <p>Prototype réalisé sur Unity.</p>
+                        <div class="projet-element pure-u-1 pure-u-md-1">
+                            <div class="projet-img-wrapper">
+                                <img src="assets/img/ru-3.jpg" alt="projet ruines unity3D" class="projet-img">
+                                <div class="projet-element-content">   
+                                    <h4 class="projet-name">Ruines</h4>
+                                    <p class="project-desc">Niveau 3D jouable (Unity).</p>
+                                    <!-- <a href="#" class="projet-link" target="_blank">VOIR</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
+            </section>
+            <!-- CONTACT -->
+            <section id="contact" class="home-sections">
+                <div class="main-container">
+                    <div class="section-title-wrapper">
+                        <h2>contact</h2>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-wrapper pure-g">
+                            <div class="pure-u-1 pure-u-md-1-3 center-content contact-element">
+                                <i class="fas fa-envelope"></i><span><a href="mailto:neil.safraoui@gmail.com" class="contact-link">neil.safraoui@gmail.com</a></span>
+                            </div> 
+                            <div class="pure-u-1 pure-u-md-1-3 center-content contact-element">
+                                <i class="fab fa-github-square"></i><span><a href="https://github.com/Neilsafraoui/" target="_blank" class="contact-link">github.com/Neilsafraoui</a></span>
+                            </div>
+                            <div class="pure-u-1 pure-u-md-1-3 center-content contact-element">
+                                <i class="fab fa-linkedin"></i><span><a href="https://www.linkedin.com/in/neil-safraoui/" target="_blank" class="contact-link">linkedin.com/neil-safraoui</a></span>
+                            </div>
+                            <hr class="pure-u-1 contact-hr">
+                            <div class="pure-u-1 pure-u-md-1-3 center-content contact-cv">
+                                <i class="fas fa-file"></i><span><a href="assets/docs/" target="_blank"> consulter cv (pdf)</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#start-header" class="to-top-arrow"> <i class="fas fa-arrow-up fa-2x"></i> </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p class="copyright light">Copyright 2019 &copy; Neil Safraoui</p>
+                <!-- <p class="pure-css">Made with <a href="https://purecss.io/" class="pure-css-link" target="_blank">PureCSS</a></p> -->
             </div>
-            
-        <!-- FIN CONTAINER -->
-        </div>
-        
-        <hr>
-        
-        <!-- FOOTER -->
-        <footer >
-            <div class="uk-background-secondary uk-padding uk-text-center"> <span class="text-white"> Copyright &copy; 2018 - Neil Safraoui</span> </div>
         </footer>
-        
+
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <div class="uk-position-relative">
+                <img src="assets/img/bg-1.jpg" alt="background">
+                <div class="uk-position-top">
+                    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li>
+                                    <a href="#">Parent</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div> -->
