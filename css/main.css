@@ -77,8 +77,8 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 100%;
     min-height: 100%;
     position: relative; */
-    background-image: url('../assets/img/bg-d-1.jpg');
-    background-size: cover;
+    background-image: url('../assets/img/bg-d-1-2.jpg');
+    /* background-size: cover; */
     padding: 1em;
 }
 
@@ -128,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero {
+        background-image: url('../assets/img/bg-d-1.jpg');
         padding: 2em 4em;
     }
 
