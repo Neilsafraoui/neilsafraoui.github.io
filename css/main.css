@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu {
     clear: both;
     max-height: 0;
-    transition: max-height .33s ease-out;
+    transition: max-height .2s ease-out;
   }
 
 .menu-icon {
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     height: 2px;
     position: relative;
-    transition: background .33s ease-out;
+    transition: background .2s ease-out;
     width: 18px;
 }
 
@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     height: 100%;
     position: absolute;
-    transition: all .33s ease-out;
+    transition: all .2s ease-out;
     width: 100%;
 }
 
