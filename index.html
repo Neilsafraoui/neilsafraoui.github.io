@@ -116,58 +116,74 @@
                 </div>
                 <div class="competence-content main-container">
                     <div class="competence-wrapper pure-g">
-                        <div class="competence-element pure-u-1 pure-u-lg-1-2">
-                            <h3 class="comp-category" id="dev">Développement</h3>
-                            <p>J'apprécie particulièrement développer côté Front-End : récupération de données via des API et réalisation d'interfaces responsive pour permettre à l'utilisateur d'observer et exploiter les données.</p>
-                            <h4 class="competence-subtitle">Langages & Base de données</h4>
-                            <ul class="comps-list">
-                                <li class="comp-elem">HTML, CSS, JavaScript, PHP</li>
-                                <li class="comp-elem">Java, C#</li>
-                                <li class="comp-elem">MySQL, SQLite, MongoDB</li>
-                            </ul>
-                            <h4 class="competence-subtitle">Frameworks & Librairies</h4>
-                            <ul class="comps-list">
-                                <li class="comp-elem">jQuery, AJAX, Vue.js</li>
-                                <li class="comp-elem">(Node.js, Express.js)</li>
-                                <li class="comp-elem"><span class="comp-elem-label">Autres : </span>API SOAP/REST, PUG/Jade, XML</li>
-                            </ul>
-                            <h4 class="competence-subtitle">Outils</h4>
-                            <ul class="tools-list">
-                                <li>Github</li>
-                                <li>Visual Studio Code</li>
-                                <li>PureCSS/UIKit</li>
-                                <li>Unity3D</li>
-                            </ul>
+                        <div class="competence-element option pure-u-1 pure-u-lg-1"> <!--pure-u-lg-1-2-->
+                            <!-- <h3 class="comp-category" id="dev">Développement</h3> -->
+                            <input type="checkbox" class="toggle" id="toggle-dev">
+                            <label for="toggle-dev" class="comp-title">développement</label>
+                            <p class="comp-desc">J'apprécie particulièrement développer côté Front-End : récupération de données via des API et réalisation d'interfaces responsive pour permettre à l'utilisateur d'observer et exploiter les données.</p>
+                            <div class="comp-details">
+                                <h4 class="competence-subtitle">Langages & Base de données</h4>
+                                <ul class="comps-list">
+                                    <li class="comp-elem">HTML, CSS, JavaScript, PHP</li>
+                                    <li class="comp-elem">Java, C#</li>
+                                    <li class="comp-elem">MySQL, SQLite, MongoDB</li>
+                                </ul>
+                                <h4 class="competence-subtitle">Frameworks & Librairies</h4>
+                                <ul class="comps-list">
+                                    <li class="comp-elem">jQuery, AJAX, Vue.js</li>
+                                    <li class="comp-elem">(Node.js, Express.js)</li>
+                                    <li class="comp-elem"><span class="comp-elem-label">Autres : </span>API SOAP/REST, PUG/Jade, XML</li>
+                                </ul>
+                                <h4 class="competence-subtitle">Outils</h4>
+                                <ul class="tools-list">
+                                    <li>Github</li>
+                                    <li>Visual Studio Code</li>
+                                    <li>PureCSS/UIKit</li>
+                                    <li>Unity3D</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="competence-element pure-u-1 pure-u-lg-1"> <!--pure-u-lg-1-2-->
+                            <!-- <h3 class="comp-category" id="gest">Gestion/Conception</h3> -->
+                            <input type="checkbox" class="toggle" id="toggle-manag">
+                            <label for="toggle-manag" class="comp-title">gestion/conception</label>
+                            <p class="comp-desc">Des méthodes de gestion de projet à la conception logicielle, jusqu'à la maintenance d'application. Au cours de mes études et expériences, j'ai pu en avoir de solides approches et/ou applications directes. </p>
+                            <div class="comp-details">
+                                <h4 class="competence-subtitle">Méthodes & Langages</h4>
+                                <ul class="comps-list">
+                                    <li class="comp-elem">SCRUM, Cycle en V</li>
+                                    <li class="comp-elem">UML2, BPMN, MERISE</li>
+                                    <li class="comp-elem">Tierce Maintenance Applicative</li>
+                                </ul>
+                                <h4 class="competence-subtitle">Outils</h4>
+                                <ul class="tools-list">
+                                    <li>BugZilla/YouTrack</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="competence-element pure-u-1 pure-u-lg-1-2">
-                            <h3 class="comp-category" id="gest">Gestion/Conception</h3>
-                            <p>Des méthodes de gestion de projet à la conception logicielle, jusqu'à la maintenance d'application. Au cours de mes études et expériences, j'ai pu en avoir de solides approches et/ou applications directes. </p>
-                            <h4 class="competence-subtitle">Méthodes & Langages</h4>
-                            <ul class="comps-list">
-                                <li class="comp-elem">SCRUM, Cycle en V</li>
-                                <li class="comp-elem">UML2, BPMN, MERISE</li>
-                                <li class="comp-elem">Tierce Maintenance Applicative</li>
-                            </ul>
-                            <h4 class="competence-subtitle">Outils</h4>
-                            <ul class="tools-list">
-                                <li>BugZilla/YouTrack</li>
-                            </ul>
-                        </div>
-                        <div class="competence-element pure-u-1 pure-u-lg-1-2">
-                            <h3 class="comp-category" id="tools">Design</h3>
-                            <p>J'ai acquis, avec le temps passé en ligne, une sensibilité au design d'interfaces et au style dit "minimaliste". De ce fait, je valorise davantage la clarté et la simplicité. </p>
-                            <h4 class="competence-subtitle">Outils</h4>
-                            <ul class="tools-list">
-                                <li>Adobe Color/Coolors</li>
-                                <li>Adobe Photoshop</li>
-                                <li>Google Fonts</li>
-                                <li>Figma</li>
-                            </ul>
+                            <!-- <h3 class="comp-category" id="tools">Design</h3> -->
+                            <input type="checkbox" class="toggle" id="toggle-design">
+                            <label for="toggle-design" class="comp-title">design</label>
+                            <p class="comp-desc">J'ai acquis, avec le temps passé en ligne, une sensibilité au design d'interfaces et au style dit "minimaliste". De ce fait, je valorise davantage la clarté et la simplicité. </p>
+                            <div class="comp-details">
+                                <h4 class="competence-subtitle">Outils</h4>
+                                <ul class="tools-list">
+                                    <li>Adobe Color/Coolors</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Google Fonts</li>
+                                    <li>Figma</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="competence-element pure-u-1 pure-u-lg-1-2">
                             <h3 class="comp-category" id="lang">Langues</h3>
-                            <p class="comp-elem-lang"><span class="comp-elem-label">Anglais : </span>Courant - C1</p>
-                            <p class="comp-elem-lang"><span class="comp-elem-label">Allemand : </span>Intermédiaire - B1</p>
+                            <!-- <p class="comp-elem-lang"><span class="comp-elem-label">Anglais : </span>Courant - C1</p>
+                            <p class="comp-elem-lang"><span class="comp-elem-label">Allemand : </span>Intermédiaire - B1</p> -->
+                            <p class="comp-desc">
+                                Anglais : Courant - C1 <br>
+                                Allemand : Intermédiaire - B1
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -414,7 +414,7 @@ section.home-sections h2 {
     }
 }
 
-/* ----- SECTION 3 : COMP ----- */
+/* ----- SECTION 3 : COMPETENCES ----- */
 
 #competences {
     /* background-color: #f7f5fb; */
@@ -424,19 +424,21 @@ section.home-sections h2 {
     box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5),0 0 0 1px #E6ECF8;
 }
 
-.comp-category {
+/* Replaced by comp-title */
+/* .comp-category {
     text-transform: uppercase;
     /* font-weight: 400; */
-    font-weight: 700;
+    /* font-weight: 700;
     text-align: center;
     color: var(--blue);
     margin-top: 10px;
     margin-bottom: 30px;
-}
+} */
 
 .competence-element {
     border-bottom: 1px solid #E6ECF8;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 1.5em;
 }
 
 /* .competence-subtitle {
@@ -449,7 +451,9 @@ section.home-sections h2 {
     padding-left: 0;
 }
 
-
+.comp-desc, .tools-list, .comp-elem-lang {
+    margin-bottom: 0;
+}
 
 .comp-elem-label {
     font-weight: 400;
@@ -466,7 +470,8 @@ section.home-sections h2 {
     } */
 
     .competence-element {
-        padding: 1em 2em;
+        /* padding: 1em 2em; */
+        padding: 2em;
     }
 
     .competence-element:nth-child(odd) {
@@ -474,6 +479,74 @@ section.home-sections h2 {
     }
 }
 
+/* --- ACCORDION --- */
+
+.toggle {
+    display: none;
+}
+
+.option {
+    position: relative;
+    /* margin-bottom: 1em; */
+}
+
+.comp-title, .comp-details {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: all 0.2s;
+}
+
+.comp-category {
+    margin-top: 0;
+    margin-bottom: 1.125em;
+}
+
+.comp-title, .comp-category {
+    color: var(--blue);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+
+.comp-title {
+    display: block;
+    cursor: pointer;
+}
+
+.comp-title:after, .comp-title:before {
+    content: '';
+    position: absolute;
+    right: .5em;
+    top: .125em;
+    width: 2px;
+    height: 1em;
+    /* background-color: #7A7572; */
+    background-color: var(--blue);
+    transition: all 0.2s;
+}
+
+.comp-title:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+.comp-details {
+    max-height: 0;
+    overflow: hidden;
+    /* background-color: #fff; */
+}
+
+/* .toggle:checked + .title + .comp-details */
+.toggle:checked ~ .comp-details {
+    max-height: 500px;
+}
+
+.toggle:checked + .comp-title:before {
+    -webkit-transform: rotate(90deg) !important;
+            transform: rotate(90deg) !important;
+}
 
 /* ----- SECTION 4 : PROJETS ----- */
 
