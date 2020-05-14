@@ -1,0 +1,18 @@
+/* ----- ROOT ----- */
+
+:root{
+    --white: #fff;
+    --almwhite: #E5E5E5;
+    --vlgray: #e0e0e0;
+    --black: #1A1A1A;
+    --almblack: #333;
+    --dgray:#666;
+    --mgray:#999;
+    --lgray:#ccc;
+    --newblack: #5b4c5c;
+    --yellow: #E1B200;
+    --blue: #086788;
+    --lblue: #b1d2dd;
+    --vlblue: #d8dde9;
+    --altlblue: #cddbe0;
+}

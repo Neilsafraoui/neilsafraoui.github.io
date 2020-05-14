@@ -1,23 +1,8 @@
-/* ----- ROOT ----- */
+/* Import variables */
 
-:root{
-    --white: #fff;
-    --almwhite: #E5E5E5;
-    --vlgray: #e0e0e0;
-    --black: #1A1A1A;
-    --almblack: #333;
-    --dgray:#666;
-    --mgray:#999;
-    --lgray:#ccc;
-    --newblack: #5b4c5c;
-    --yellow: #E1B200;
-    --blue: #086788;
-    --lblue: #b1d2dd;
-    --vlblue: #d8dde9;
-    --altlblue: #cddbe0;
-}
+@import url("variables.css");
 
-/* ----- GENERIC ----- */
+/* ----- GENERIC START ----- */
 
 html {
     font-size: 16px;
@@ -30,9 +15,11 @@ body {
     color: var(--almblack);
 }
 
+/* ----- GENERIC END ----- */
+
 /* add font size plus low sur écrans plus petits ? */
 
-/* ----- FONTS ----- */
+/* ----- FONTS START ----- */
 
 * {
     /* font-family: 'Source Sans Pro', sans-serif; */
@@ -45,7 +32,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* ----- CONTAINERS ----- */
+/* ----- FONTS END ----- */
+
+/* ----- CONTAINERS START ----- */
 
 .main-container {
     padding-right: 1.25em;
@@ -73,7 +62,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 } */
 
-/* ----- HERO ----- */
+/* ----- CONTAINERS END ----- */
+
+/* ----- HERO START ----- */
 
 .hero {
     /* width: 100%;
@@ -110,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
     border: 3px solid #E1B200;
     display: block;
-    margin: 0 auto .25em auto;
+    margin: 0 auto .5em auto;
     border-radius: 100%;
 }
 
@@ -146,7 +137,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* ----- NAV/MENU ----- */
+/* ----- HERO END ----- */
+
+/* ----- NAV/MENU START ----- */
 /* --- Mobile first --- */
 
 .nav-menu {
@@ -309,7 +302,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* ----- SECTIONS ----- */
+/* ----- NAV/MENU END ----- */
+
+/* ----- SECTIONS START ----- */
 
 .section-title-wrapper {
     text-align: center;
@@ -344,8 +339,6 @@ section.home-sections h2 {
     /* letter-spacing: 1px; */
     /* font-weight: 700; */
 }
-
-
 
 /* ----- SECTION 1 : PROFILE ----- */
 
@@ -512,7 +505,8 @@ section.home-sections h2 {
         padding: 2em;
     }
 
-    .competence-element:nth-child(odd) {
+    /* was .competence-element:nth-child(odd) { */
+    .competence-element:nth-child(n+1) {
         border-right: 1px solid #E6ECF8;
     }
 }
@@ -619,6 +613,7 @@ section.home-sections h2 {
 .projet-img-wrapper {
     position: relative;
     overflow: hidden;
+    border-radius: .25em;
 }
 
 .projet-img-wrapper::after {
@@ -742,6 +737,67 @@ section.home-sections h2 {
     height: 1px;
     background-color: var(--lgray);
 }
+
+/* ----- SECTIONS END ----- */
+
+/* ----- MODALS START ----- */
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    animation: fadeIn .5s both;
+}
+
+.modal-wrapper {
+    overflow: auto;
+    background-color: #fff;
+    width: 1200px; /* à ajuster */
+    max-width: calc(100vw - 1rem);
+    max-height: calc(100vh - 1rem);
+    padding: 1rem;
+    /* animation: slideFromTop .5 both; */
+}
+
+.modal[aria-hidden="true"] {
+    animation: fadeOut .5s;
+}
+
+/* Modals animations */
+
+/* .modal[aria-hidden="true"] .modal-wrapper {
+    animation-name: slideToBottom;
+} */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }    
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }    
+}
+
+/* @keyframes slideFromTop {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0px); }    
+}
+
+@keyframes slideToBottom {
+    from { transform: translateY(0px); }
+    to { transform: translateY(50px); }    
+} */
+
+
+/* ----- MODALS END ----- */
 
 /* ----- FOOTER ----- */
 

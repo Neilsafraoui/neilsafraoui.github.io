@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html>
+<html>
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +7,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- EXTERNAL -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Hind:300,400,500,600,700|Open+Sans:300,400,600,700|Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet"> 
-        
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Hind:300,400,500,600,700|Open+Sans:300,400,600,700|Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+        <!-- PureCSS -->
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-
+        <!-- FontAwesome-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-
-        <!-- <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/latest/normalize.css" /> -->
 
         <!-- INTERNAL -->
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-        <!-- <script src="main.js"></script> -->
     </head>
     <body>
+        <!-- HEADER START -->
         <header id="start-header">
-            <!-- bg image + overlay -->
             <div class="hero">
                 <div class="hero-content">
                     <nav class="nav-menu">
@@ -48,8 +45,10 @@
                 </div>
             </div>
         </header>
+        <!-- HEADER END -->
+        <!-- MAIN START -->
         <main> <!-- removed class="main-container" -->
-            <!-- PROFILE -->
+            <!-- PROFILE START -->
             <section id="profile" class="home-sections main-container">
                 <div class="section-title-wrapper">
                     <h2>profil</h2>
@@ -61,7 +60,8 @@
                 </div>
                 <!-- <button class="profile-see-more">VOIR PLUS</button> -->
             </section>
-            <!-- EXPERIENCES -->
+            <!-- PROFILE END -->
+            <!-- EXPERIENCES START -->
             <section id="experiences" class="home-sections main-container">
                 <div class="section-title-wrapper">
                     <h2>expériences</h2>
@@ -139,7 +139,8 @@
                     </div>
                 </div>
             </section>
-            <!-- COMPETENCES -->
+            <!-- EXPERIENCES END -->
+            <!-- COMPETENCES START -->
             <section id="competences" class="home-sections">
                 <div class="section-title-wrapper">
                     <h2>compétences</h2>
@@ -219,7 +220,8 @@
                     </div>
                 </div>
             </section>
-            <!-- PROJETS -->
+            <!-- COMPETENCES END -->
+            <!-- PROJETS START -->
             <section id="projets" class="home-sections main-container"> <!-- removed main-container -->
                 <div class="section-title-wrapper">
                     <h2>projets</h2>
@@ -252,14 +254,15 @@
                                 <div class="projet-element-content">   
                                     <h4 class="projet-name">Ruines</h4>
                                     <p class="project-desc">Niveau 3D jouable (Unity).</p>
-                                    <!-- <a href="#" class="projet-link" target="_blank">VOIR</a> -->
+                                    <a href="#modal-ruines" class="projet-link js-modal">VOIR</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- CONTACT -->
+            <!-- PROJETS END -->
+            <!-- CONTACT START -->
             <section id="contact" class="home-sections">
                 <div class="main-container">
                     <div class="section-title-wrapper">
@@ -285,14 +288,29 @@
                     <a href="#start-header" class="to-top-arrow"> <i class="fas fa-arrow-up fa-2x"></i> </a>
                 </div>
             </section>
+            <!-- CONTACT END -->
         </main>
+        <!-- MAIN END -->
+        <!-- MODALS START -->
+        <aside id="modal-ruines" class="modal" style="display:none;" aria-hidden="true">
+            <div class="modal-wrapper js-modal-stop">
+                <button class="js-modal-close">Fermer</button>
+                <h5 class="modal-content-title">Ruines</h5>
+                <p class="modal-content-text">Niveau jouable, réalisé sur Unity.</p>
+                <img src="assets/img/ru-1.jpg" alt="" class="modal-content-img">
+                <img src="assets/img/ru-2.jpg" alt="" class="modal-content-img">
+            </div>
+        </aside>
+        <!-- MODALS END-->
+        <!-- FOOTER START -->
         <footer>
             <div class="footer-content">
                 <p class="copyright light">Copyright 2019 &copy; Neil Safraoui</p>
                 <!-- <p class="pure-css">Made with <a href="https://purecss.io/" class="pure-css-link" target="_blank">PureCSS</a></p> -->
             </div>
         </footer>
-
+        <!-- FOOTER END -->
+    <script src="js/modal.js"></script>    
     </body>
 </html>
 
